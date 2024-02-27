@@ -10,74 +10,112 @@
     <title>Python notes</title>
   </head>
   <body>
-        <main class="container">
-            <h1>Print command</h1>
-            <p>
-              Prints your desired text on screen. If using "sep=''", it will divide
-              your text.
-            </p>
-            <p>
-              Using single quotes or double quotes may affect. When using text only,
-              it will have no effect. If using variables, it is a must to include
-              either quotes or double quotes to differentiate each of them.
-            </p>
-            <p>For example:</p>
-            <p>print("Hello World")</p>
-            <b><p>will print "Hello World"</p></b>
-            <p>print('Hello World')</p>
-          <b><p>will print "Hello World"</p></b>
-            <p>print("Hello " + "World")</p>
-          <b><p>print(this, shows, how, sep, works, sep=" ")</p></b>
-            <p>will print "this shows how sep works"</p>
-            <hr>
-            <h1>Math Operations</h1>
-            <p>print(2 + 2)</p>
-            <p>will print 4</p>
-            <p>print(11-3)</p>
-            <p>will print 8</p>
-            <p>print(15/3)</p>
-            <p>will print 5</p>
-            <small
-              ><b
-                >Dividing will always result in a float/double value, due to it
-                allowing some errors on bigger codes. For it not to show "leftovers",
-                use '//'</b
-              ></small
-            >
-            <br>
-            <br>
-            <p>print(17//5)</p>
-            <p>will print 3(note how it doesn't show the rest 2)</p>
-            <p>print(17%5)</p>
-            <p>will print 2(what's left from 17/5)</p>
-            <p>print(2**3)</p>
-            <p>will print 8</p>
-            <p>print(25**0.5)</p>
-            <p>will print 5</p>
-            <p>print(25**1/2)</p>
-            <p>will print 12.5</p>
-            <small><b>WARNING: Trying to use numbers such as '1/2' will not work, as it will execute the operations following the line's order. For it to work, use parenthesis.</b></small>
-            <p>print(25**(1/2))</p>
-            <p>will print 5</p>
-            <p>print(1+2)</p>
-            <p>will print 3</p>
-            <div id="stringOp"> 
-                <p>print("1"+"2")</p>
-                <p>will print 12</p>
-                <small><b>Executing an addition operation with string variables will concat them.</b></small>
-                <p>print("PUC"+"-"+"Campinas")</p>
-                <p>will print "PUC-Campinas"</p>
-                <small><b>You can use multiplication sign(*) on a <code>print</code> command with strings to print the string multiple times.</b></small>
-                <p>print("PUC "*3)</p>
-                <p>will print "PUC PUC PUC"</p>
-                <p>print(Lorem ipsum dolor sit amet consectetur adipisicing elit.\nInventore nesciunt harum quidem nostrum explicabo omnis itaque, reprehenderit rerum quaerat quisquam exercitationem, nam neque at provident saepe soluta odio hic ex.)</p>
-                <p>will print the text, but with a line break</p>
-                <small><b>the '\n' is a line break command. Using it multiple times will break a proportional amount of lines.</b></small>
-            </div>
-           
-
-
-        </main>
-      
+    <main class="container">
+      <details>
+        <summary>Table of Contents</summary>
+        <ul>
+          <li><a href="#print">Print command basic funcionality</a></li>
+          <li><a href="#mathOp">Math Operations</a></li>
+          <li><a href="#stringOp">String Operations</a></li>
+        </ul>
+      </details>
+      <hr>
+      <div id="print">
+        <h1>Print command</h1>
+        <p>
+          Prints your desired text on screen. If using "sep=''", it will divide
+          your text.
+        </p>
+        <p>
+          Using single quotes or double quotes may affect. When using text only,
+          it will have no effect. If using variables, it is a must to include
+          either quotes or double quotes to differentiate each of them.
+        </p>
+        <p>For example:</p>
+        <p>print("Hello World")</p>
+        <b><p>will print "Hello World"</p></b>
+        <p>print('Hello World')</p>
+        <b><p>will print "Hello World"</p></b>
+        <p>print("Hello " + "World")</p>
+        <b><p>print(this, shows, how, sep, works, sep=" ")</p></b>
+        <p>will print "this shows how sep works"</p>
+        <hr />
+      </div>
+      <hr>
+      <div id="mathOp">
+        <h1>Math Operations</h1>
+        <p>print(2 + 2)</p>
+        <p>will print 4</p>
+        <p>print(11-3)</p>
+        <p>will print 8</p>
+        <p>print(15/3)</p>
+        <p>will print 5</p>
+        <small
+          ><b
+            >Dividing will always result in a float/double value, due to it
+            allowing some errors on bigger codes. For it not to show
+            "leftovers", use '//'</b
+          ></small
+        >
+        <br />
+        <br />
+        <p>print(17//5)</p>
+        <p>will print 3(note how it doesn't show the rest 2)</p>
+        <p>print(17%5)</p>
+        <p>will print 2(what's left from 17/5)</p>
+        <p>print(2**3)</p>
+        <p>will print 8</p>
+        <p>print(25**0.5)</p>
+        <p>will print 5</p>
+        <p>print(25**1/2)</p>
+        <p>will print 12.5</p>
+        <small
+          ><b
+            >WARNING: Trying to use numbers such as '1/2' will not work, as it
+            will execute the operations following the line's order. For it to
+            work, use parenthesis.</b
+          ></small
+        >
+        <p>print(25**(1/2))</p>
+        <p>will print 5</p>
+        <p>print(1+2)</p>
+        <p>will print 3</p>
+      </div>
+      <hr>
+      <div id="stringOp">
+        <h1>String Operations</h1>
+        <p>print("1"+"2")</p>
+        <p>will print 12</p>
+        <small
+          ><b
+            >Executing an addition operation with string variables will concat
+            them.</b
+          ></small
+        >
+        <p>print("PUC"+"-"+"Campinas")</p>
+        <p>will print "PUC-Campinas"</p>
+        <small
+          ><b
+            >You can use multiplication sign(*) on a <code>print</code> command
+            with strings to print the string multiple times.</b
+          ></small
+        >
+        <p>print("PUC "*3)</p>
+        <p>will print "PUC PUC PUC"</p>
+        <p>
+          print(Lorem ipsum dolor sit amet consectetur adipisicing
+          elit.\nInventore nesciunt harum quidem nostrum explicabo omnis itaque,
+          reprehenderit rerum quaerat quisquam exercitationem, nam neque at
+          provident saepe soluta odio hic ex.)
+        </p>
+        <p>will print the text, but with a line break</p>
+        <small
+          ><b
+            >the '\n' is a line break command. Using it multiple times will
+            break a proportional amount of lines.</b
+          ></small
+        >
+      </div>
+    </main>
   </body>
 </html>
